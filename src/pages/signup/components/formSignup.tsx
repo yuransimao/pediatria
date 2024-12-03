@@ -69,15 +69,15 @@ function FormSignup() {
   return (
     <React.Fragment>
          <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                  <div className='grid grid-cols-2 gap-4'>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+                  <div className='grid grid-cols-2 gap-x-4 gap-y-7'>
                     <FormField
                       control={form.control}
                       name="username"
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input placeholder="Nome completo" {...field} className="bg-zinc-50 py-6" />
+                            <Input placeholder="Nome completo" {...field} className="bg-neutral-700 text-white py-6 rounded placeholder:text-white" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -89,7 +89,7 @@ function FormSignup() {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input placeholder="Numero BI" {...field} className="bg-zinc-50 py-6" />
+                            <Input placeholder="Numero BI" {...field} className="bg-neutral-700 text-white py-6 rounded placeholder:text-white" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -101,7 +101,7 @@ function FormSignup() {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input placeholder="Email" {...field} className="bg-zinc-50 py-6" type="email"/>
+                            <Input placeholder="Email" {...field} className="bg-neutral-700 text-white py-6 rounded placeholder:text-white" type="email"/>
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -113,7 +113,7 @@ function FormSignup() {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input placeholder="Numero  de telefone" {...field} className="bg-zinc-50 py-6" type="tel"/>
+                            <Input placeholder="Numero  de telefone" {...field} className="bg-neutral-700 text-white py-6 rounded placeholder:text-white" type="number"/>
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -128,7 +128,7 @@ function FormSignup() {
                       <FormItem>
 
                         <FormControl>
-                          <Input placeholder="Senha" {...field} className="bg-zinc-50 py-6" type='password' />
+                          <Input placeholder="Senha" {...field} className="bg-neutral-700 text-white py-6 rounded placeholder:text-white" type='password' />
                         </FormControl>
 
                         <FormMessage />
@@ -161,7 +161,7 @@ function FormSignup() {
                   />
                   
                  
-                  <Button type="submit" className='w-full py-6 bg-blue-700 ease-in-out duration-300 hover:bg-blue-800 hover:opacity-90'>Criar conta</Button>
+                  <Button type="submit" className='w-full py-6 bg-blue-700 ease-in-out duration-300 hover:bg-blue-800 hover:opacity-90 text-white rounded'>Criar conta</Button>
                 </form>
               </Form>
     </React.Fragment>

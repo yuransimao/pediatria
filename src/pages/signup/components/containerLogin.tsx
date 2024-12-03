@@ -52,7 +52,7 @@ function ContainerLogin({setAnimationSign}:ContainerProps) {
             
 
           </div>
-          <div className='h-full  overflow-hidden rounded-md relative after:absolute after:h-full after:w-full after:top-0 after:bg-[#0000001a] after:z-10'>
+          <div className='h-full  overflow-hidden borde-2 border-neutral-700 rounded relative after:absolute after:h-full after:w-full after:top-0 after:bg-[#0000005d] after:z-10'>
             <img src={Hospital} alt="hospital" className='h-full object-cover ' />
 
             <div className='h-full w-full absolute top-0 z-20 flex  justify-start p-5' >

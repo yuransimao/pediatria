@@ -54,7 +54,7 @@ function FormLogin() {
                       <FormItem>
 
                         <FormControl>
-                          <Input placeholder="Digita seu email" {...field} className="bg-zinc-50 py-6" type="email"/>
+                          <Input placeholder="Digita seu email" {...field} className="bg-neutral-700 text-white py-6 rounded placeholder:text-white" type="email"/>
                         </FormControl>
 
                         <FormMessage />
@@ -68,7 +68,7 @@ function FormLogin() {
                       <FormItem>
 
                         <FormControl>
-                          <Input placeholder="Digita sua senha" {...field} className="bg-zinc-50 py-6" type='password' />
+                          <Input placeholder="Digita sua senha" {...field} className="bg-neutral-700 text-white py-6 rounded placeholder:text-white" type='password' />
                         </FormControl>
 
                         <FormMessage />
@@ -78,7 +78,7 @@ function FormLogin() {
                   <p className='text-sm'>Perdeu senha ?  <span className='text-blue-700 underline'>Recuperar</span></p>
 
                   
-                  <Button type="submit" className='w-full py-6 bg-blue-700 ease-in-out duration-300 hover:bg-blue-800 hover:opacity-90'>Entrar</Button>
+                  <Button type="submit" className='w-full py-6 bg-blue-700 ease-in-out duration-300 hover:bg-blue-800 hover:opacity-90 text-white rounded-md'>Entrar</Button>
                 </form>
               </Form>
     </React.Fragment>

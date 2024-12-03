@@ -9,38 +9,38 @@ function NavLinks() {
         {
             label: 'Dashboard',
             url: '/dashboard',
-            icon: <House size={24}/>,
+            icon: <House  size={20}/>,
         },
         {
             label: 'Consultas',
             url: '/consulta',
-            icon: <Clipboard size={24}/>,
+            icon: <Clipboard  size={20}/>,
         },
         {
             label: 'Pacientes',
             url: '/paciente',
-            icon: <User size={24}/>,
+            icon: <User size={20}/>,
         },
         {
             label: 'Agendamentos',
             url: '/agendamento',
-            icon: <Calendar size={24}/>,
+            icon: <Calendar  size={20}/>,
         },
     ]
 
 
     const ActiveLink = ({ isActive }: { isActive: boolean }) => 
-        `flex items-center  gap-8 overflow-hidden transition-all duration-500 ease-in-out  py-2 rounded-md px-2 ${
-          isActive ? 'bg-neutral-200/50' : ''
-        }  ${Open  === false && 'justify-center'}`;
+        `flex items-center  gap-6 transition-all duration-500 ease-in-out  py-3  px-3 ${
+          isActive ? 'font-bold text-blue-600' : ''
+        }  hover:text-blue-600 text-neutral-200 w-full font-medium`;
 
   return (
     <React.Fragment>
-        <div  className='space-y-6 w-full'>
+        <div  className='space-y-2  w-full h-[90%] flex flex-col justify-center' >
 
             {itemMenu.map((item, index) => (
                 <NavLink to={item.url} className={({ isActive }) => ActiveLink({ isActive })} key={index}>
-                <span >
+                <span className=' h-full w-5 flex items-center justify-center'>
                     {item.icon}
                 </span>
                  {Open && <motion.span
@@ -49,7 +49,7 @@ function NavLinks() {
                     opacity: Open ? 1 : 0 ,
                   }}
                   
-                 className='text-sm font-bold'>{ item.label}</motion.span>}
+                 className='text-xs   uppercase'>{ item.label}</motion.span>}
                 </NavLink>
             ))}
 

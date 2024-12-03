@@ -17,7 +17,7 @@ function ContainerSignup({setAnimationSign}: ContainerProps) {
         <div className='w-full h-full'>
         <div className='grid grid-cols-2 h-full w-full p-4 '>
 
-          <div className='h-full  overflow-hidden rounded-md relative after:absolute after:h-full after:w-full after:top-0 after:bg-[#0000001a] after:z-10'>
+          <div className='h-full  overflow-hidden borde-2 border-neutral-700 rounded relative after:absolute after:h-full after:w-full after:top-0 after:bg-[#0000005d] after:z-10'>
             <img src={Hospital} alt="hospital" className='h-full object-cover ' />
 
             <div className='h-full w-full absolute top-0 z-20 flex  justify-end p-5' >
@@ -46,11 +46,11 @@ function ContainerSignup({setAnimationSign}: ContainerProps) {
               
 
               <div className='flex items-center gap-4'>
-              <Button className='w-full py-6' variant="outline">
+              <Button className='w-full py-6 rounded' variant="outline">
                   <FcGoogle size={28}/>
                   <h5>Google</h5>
                 </Button>
-                <Button className='w-full py-6' variant="outline" >
+                <Button className='w-full py-6 rounded' variant="outline" >
                 <Facebook  fill="blue"  className='text-blue-700'/>
                   <h5>Facebook</h5>
                   </Button>
