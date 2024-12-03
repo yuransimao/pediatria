@@ -15,7 +15,7 @@ function Layout() {
                 <div className={`transition-all duration-500 ease-in-out border-l-2   border-neutral-700   bg-neutral-950  ${Open ? 'w-[83.333333%]' : 'w-full'}`}>
                     <Header/>
 
-                    <div><Outlet /></div>
+                    <div  className='px-4 py-6'><Outlet /></div>
                 </div>
             </div>
         </React.Fragment>
