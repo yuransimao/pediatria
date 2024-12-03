@@ -5,19 +5,19 @@ import {
     DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem,
     DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, Avatar,
     AvatarFallback,
-    AvatarImage,Card
+    AvatarImage,Card, Button
 } from './ui'
 function Header() {
     return (
         <React.Fragment>
             <Card className='border-b rounded-none'>
                 <div className='px-8 py-6 flex justify-end items-center gap-4'>
-                    <button className='rounded-full p-2 bg-neutral-800 transition-all duration-300 hover:bg-neutral-900'>
+                    <Button variant='outline' className='rounded-full p-3 w-9 h-9  transition-all duration-300 hover:bg-neutral-900'>
                         <MessageCircle size={18} />
-                    </button>
-                    <button className='rounded-full p-2 bg-neutral-800 transition-all duration-300 hover:bg-neutral-900'>
+                    </Button>
+                    <Button variant='outline' className='rounded-full p-2 transition-all duration-300 hover:bg-neutral-900 w-9 h-9'>
                         <Bell size={18} />
-                    </button>
+                    </Button>
                     <div>
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>

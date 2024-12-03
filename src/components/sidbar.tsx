@@ -21,10 +21,10 @@ function Sidbar({ Open, setOpen }: SidbarProps) {
                 <div className={`h-full   ${Open ? 'w-1/6 flex-shrink-2' : 'w-24 flex-shrink-0'}   fixed  transition-all duration-500 ease-in-out `}>
 
                     <div className='h-full w-full relative  '>
-                        <Button className='duration-300 ease-in-out text-white absolute top-8 p-4 rounded-full w-4 h-4 -right-4 bg-blue-600 hover:bg-blue-700 hover:opacity-95'
+                        <Button className='duration-300 ease-in-out text-white absolute top-9 p-3 rounded-full w-4 h-4 -right-3 bg-blue-600 hover:bg-blue-700 hover:opacity-95'
                             onClick={() => setOpen(!Open)}
                         >
-                            {Open ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
+                            {Open ? <ChevronLeft size={18} /> : <ChevronRight size={18} />}
                         </Button>
                         <div className='h-full w-full px-6 py-7 flex flex-col items-center justify-center overflow-hidden '>
                             <div className={`flex items-center gap-6  w-full overflow-hidden   transition-all duration-500 ease-in-out `}>
