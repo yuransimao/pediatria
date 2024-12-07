@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button} from '@/components'
+import {Button,BtnAddMembers} from '@/components'
 import { CardsTotal, CardsAgeRange,ChartBar, CardMembers } from './componets'
 
 
@@ -12,9 +12,7 @@ function Dashboard() {
           <h2 className='font-bold '>Olá Yuran</h2>
 
           <div className='flex items-center gap-4'>
-            <Button className='bg-blue-800 text-white rounded-full hover:bg-blue-900 font-bold'>
-              <h3>Novo Membro</h3>
-            </Button>
+            <BtnAddMembers/>
             <Button variant='outline' className='rounded-full'>
               <h3>Fazer consulta</h3>
             </Button>

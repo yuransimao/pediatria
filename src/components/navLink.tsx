@@ -17,8 +17,8 @@ function NavLinks() {
             icon: <Clipboard  size={20}/>,
         },
         {
-            label: 'Pacientes',
-            url: '/paciente',
+            label: 'Membros',
+            url: '/membro',
             icon: <User size={20}/>,
         },
         {
@@ -39,7 +39,7 @@ function NavLinks() {
         <div  className='space-y-2  w-full h-[90%] flex flex-col justify-center' >
 
             {itemMenu.map((item, index) => (
-                <NavLink to={item.url} className={({ isActive }) => ActiveLink({ isActive })} key={index}>
+                <NavLink to={item.url} className={ActiveLink} key={index}>
                 <span className=' h-full w-5 flex items-center justify-center'>
                     {item.icon}
                 </span>

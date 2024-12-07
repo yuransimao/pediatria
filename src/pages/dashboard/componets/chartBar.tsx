@@ -13,21 +13,21 @@ import {
   
   
   const chartData = [
-    { month: "January", desktop: 186, mobile: 80 },
-    { month: "February", desktop: 305, mobile: 200 },
-    { month: "March", desktop: 237, mobile: 120 },
-    { month: "April", desktop: 73, mobile: 190 },
-    { month: "May", desktop: 209, mobile: 130 },
-    { month: "June", desktop: 214, mobile: 140 },
+    { month: "Janero", desktop: 186, mobile: 80 },
+    { month: "Fevereiro", desktop: 305, mobile: 200 },
+    { month: "Março", desktop: 237, mobile: 120 },
+    { month: "Abril", desktop: 73, mobile: 190 },
+    { month: "Maio", desktop: 209, mobile: 130 },
+    { month: "Junho", desktop: 214, mobile: 140 },
   ]
   
   const chartConfig = {
     desktop: {
-      label: "Desktop",
+      label: "Doenças",
       color: "#2563eb",
     },
     mobile: {
-      label: "Mobile",
+      label: "Consultas",
       color: "#60a5fa",
     },
   } satisfies ChartConfig

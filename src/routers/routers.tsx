@@ -14,7 +14,7 @@ export const Routers = () => {
         <Route path='/agendamento' element={<Pages.Agendamento />} />
         
         <Route path='/consulta' element={<Pages.Consulta />} />
-        <Route path='/paciente' element={<Pages.Paciente />} />
+        <Route path='/membro' element={<Pages.Members />} />
         <Route path='/dashboard' element={<Pages.Dashboard />} />
           
         </Route>
