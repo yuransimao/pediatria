@@ -13,3 +13,6 @@ export * from './sheet'
 export * from './select'
 export * from "./popover"
 export * from './calendar'
+export * from "./dialog"
+export * from "./toast"
+export * from "./toaster"

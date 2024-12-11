@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button,BtnAddMembers} from '@/components'
+import {BtnAddMembers,  BtnMakeAppointment} from '@/components'
 import { CardsTotal, CardsAgeRange,ChartBar, CardMembers } from './componets'
 
 
@@ -13,9 +13,7 @@ function Dashboard() {
 
           <div className='flex items-center gap-4'>
             <BtnAddMembers/>
-            <Button variant='outline' className='rounded-full'>
-              <h3>Fazer consulta</h3>
-            </Button>
+            <BtnMakeAppointment/>
           </div>
         </div>
 

@@ -39,12 +39,7 @@ const formSchema = z.object({
 
 function FormAddMembers() {
     const form = useForm<z.infer<typeof formSchema>>({
-        resolver: zodResolver(formSchema),
-        defaultValues: {
-            member_name: "",
-          
-            
-        },
+        resolver: zodResolver(formSchema)
     });
 
     const onSubmit = (data: z.infer<typeof formSchema>) => {
